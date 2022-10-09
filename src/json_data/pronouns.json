@@ -1,0 +1,22 @@
+{
+  "pronouns": [
+    "мен",
+    "сен",
+    "сіз",
+    "ол",
+    "біз",
+    "сендер",
+    "сіздер",
+    "олар"
+  ],
+  "descriptions": [
+    "1st person singular",
+    "2nd person singular (informal)",
+    "2nd person singular (formal)",
+    "3rd person singular",
+    "1st person plural",
+    "2nd person plural (informal)",
+    "2nd person plural (formal)",
+    "3rd person plural"
+  ]
+}

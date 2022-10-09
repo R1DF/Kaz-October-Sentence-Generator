@@ -1,0 +1,22 @@
+{
+  "tenses": [
+    "Continuous",
+    "Present",
+    "Past Simple",
+    "Future Motivative",
+    "Future Potential",
+    "Past Obvious",
+    "Past Uncertain",
+    "Past Continuous"
+  ],
+  "descriptions": [
+    "I regularly do, I will do",
+    "I am doing in the moment",
+    "I did",
+    "I am planning to do",
+    "I might do",
+    "I definitely did",
+    "I might not have done",
+    "I was doing"
+  ]
+}

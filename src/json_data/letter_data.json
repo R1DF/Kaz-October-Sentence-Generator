@@ -1,0 +1,12 @@
+{
+  "vowels": {
+    "soft": [],
+    "hard": []
+  },
+  "consonants": {
+    "sonorant": [],
+    "voiced": [],
+    "voiceless": []
+  },
+  "all": []
+}

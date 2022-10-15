@@ -13,3 +13,9 @@ TENSES_FILE = json.load(open(os.getcwd() + "\\json_data\\tenses.json", "r", enco
 TENSES, TENSES_DESCRIPTIONS = TENSES_FILE["tenses"], TENSES_FILE["descriptions"]
 
 VERBS = json.load(open(os.getcwd() + "\\json_data\\verbs.json", "r", encoding="utf-8"))
+
+LETTERS_DICT = json.load(open(os.getcwd() + "\\json_data\\letter_data.json", "r", encoding="utf-8"))
+VOWELS = LETTERS_DICT["vowels"]
+CONSONANTS = LETTERS_DICT["consonants"]
+
+COMMON_DATA = json.load(open(os.getcwd() + "\\json_data\\common_data.json", "r", encoding="utf-8"))

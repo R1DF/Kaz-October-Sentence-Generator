@@ -60,6 +60,7 @@ def main():
     await_key_press()
     clear()
 
+
 # Running the function
 try:
     main()

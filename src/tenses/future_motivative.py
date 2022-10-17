@@ -47,6 +47,7 @@ class FutureMotivativeTense(BaseTense):
             ending = self.endings[self.pronoun_number - 1][1]  # Ending must always be soft for emes
             self.conjugated = self.infinitive[:-1] + suffix + " емес" + ending
 
-    def set_infinitive(self):
-        self.infinitive = random.choice(self.verbs_list) # Override because no negation
+    def set_infinitive(self, infinitive):
+        self.infinitive = infinitive # Override because no negation
         self.conjugated = None
+

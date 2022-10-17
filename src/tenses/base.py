@@ -29,10 +29,10 @@ class BaseTense:
         # Finding pronoun
         self.pronoun = PRONOUNS[self.pronoun_number - 1]
 
-    def set_infinitive(self):
+    def set_infinitive(self, infinitive):
         """This function grabs a random infinitive from the verbs.json file in /src/.
          will negate the infinitive automatically if the is_negated boolean is True."""
-        self.infinitive = random.choice(self.verbs_list)
+        self.infinitive = infinitive
         if self.is_negated:
             self.negate()
         self.conjugated = None  # always gets reset even after the verb changes
@@ -113,6 +113,7 @@ class BaseTense:
         for letter_index in range(len(self.infinitive) - 2, -1, -1):
             if self.is_vowel(self.infinitive[letter_index]):
                 return self.detect_letter_type(letter_index)
+
     def conjugate(self):
         """This function must be overridden by child classes."""
         return None

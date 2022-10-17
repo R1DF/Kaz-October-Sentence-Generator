@@ -50,11 +50,11 @@ class PresentTense(BaseTense):
         else:
             return self.infinitive[:-3]
 
-    def set_infinitive(self):  # Override
-        if self.form == "simple":
+    def set_infinitive(self, infinitive):  # Override
+        if self.form == "simple": # never used actually
             self.infinitive = random.choice(self.auxiliary_verbs)
         else:
-            self.infinitive = random.choice(self.verbs_list)
+            self.infinitive = infinitive
 
         if self.is_negated and self.form != "complex": # The 2nd check is there because the first variant has its own negation
             self.negate()
@@ -102,7 +102,7 @@ class PresentTense(BaseTense):
             # First variant: (long version)
             # Getting the stem is the same.
             stem = self.infinitive_used[:-1]
-            determinant = {"hard": 0, "soft": 0}[self.detect_last_vowel_type()]
+            determinant = {"hard": 0, "soft": 1}[self.detect_last_vowel_type()]
             match self.detect_letter_type(-2):
                 case "hard" | "soft":
                     stem_suffix = self.conjugation_data["stemSuffixes"][2]

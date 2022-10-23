@@ -13,7 +13,7 @@ class PotentialSentence(BaseSentence):
         if word_vowel_type(self.held_verb) == "hard":
             self.held_verb_altered = self.held_verb + "ға"
         else:
-            self.held_verb_altered += self.held_verb + "ге"
+            self.held_verb_altered = self.held_verb + "ге"
 
 
         # Getting the sentence
